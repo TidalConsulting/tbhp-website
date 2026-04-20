@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tampa Bay Housing Partners | Sell Your Tampa Home for Cash</title>
+  <meta name="description" content="Tampa Bay Housing Partners buys homes in any condition across the Tampa Bay area. Get a fair, no-obligation cash offer and close in as little as 7 days. No agents, no commissions, no repairs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Tampa Bay Housing Partners">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="36" height="36" role="img" aria-label="TBHP logo">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#0b4f7a"/>
+                <stop offset="1" stop-color="#1aa0c9"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="10" fill="url(#g)"/>
+            <path d="M9 26 L24 13 L39 26 V38 H29 V29 H19 V38 H9 Z" fill="#fff"/>
+            <circle cx="36" cy="14" r="3" fill="#f5a623"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Tampa Bay</strong>
+          <span>Housing Partners</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#situations">Situations</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+18135550199" class="nav-phone">(813) 555-0199</a>
+        <a href="#offer" class="btn btn-primary nav-cta">Get My Cash Offer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Local Cash Home Buyer · Tampa Bay, FL</p>
+          <h1>Sell your Tampa Bay home. <span class="accent">Fair offers. Fast closings. Real solutions.</span></h1>
+          <p class="lede">We buy houses in any condition, anywhere across Tampa, St. Pete, Clearwater and the surrounding Bay Area. Skip the repairs, the showings, and the agent fees — close on your timeline, as quickly as 7 days.</p>
+          <ul class="hero-points">
+            <li>No commissions or hidden fees</li>
+            <li>No repairs, cleaning, or staging</li>
+            <li>Close in as little as 7 days</li>
+            <li>Honest, no-obligation cash offer</li>
+          </ul>
+          <div class="hero-ctas">
+            <a href="#offer" class="btn btn-primary">Get My Cash Offer</a>
+            <a href="tel:+18135550199" class="btn btn-ghost">or call (813) 555-0199</a>
+          </div>
+          <div class="trust-row">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Trusted by Tampa Bay homeowners since 2015</p>
+          </div>
+        </div>
+
+        <aside class="offer-card" id="offer">
+          <h2>Get your free cash offer</h2>
+          <p class="muted">Tell us a little about your property. No obligation, no spam.</p>
+          <form class="offer-form" id="offerForm" novalidate>
+            <label>
+              <span>Property address</span>
+              <input type="text" name="address" required placeholder="123 Bayshore Blvd, Tampa, FL" />
+            </label>
+            <div class="row">
+              <label>
+                <span>Your name</span>
+                <input type="text" name="name" required placeholder="Alex Morgan" />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" required placeholder="(813) 555-0100" />
+              </label>
+            </div>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@email.com" />
+            </label>
+            <label>
+              <span>Property type</span>
+              <select name="type">
+                <option>Single-family home</option>
+                <option>Condo / Townhome</option>
+                <option>Duplex / Multi-family</option>
+                <option>Mobile / Manufactured</option>
+                <option>Land / Lot</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Request My Offer</button>
+            <p class="form-note">By submitting, you agree to be contacted about your property. We never share your info.</p>
+          </form>
+          <div class="offer-success" id="offerSuccess" hidden>
+            <h3>Thanks — we've got it.</h3>
+            <p>A Tampa Bay Housing Partners specialist will reach out within one business day with your offer.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Why Sell To Us</p>
+          <h2>A simpler way to sell in the Bay Area</h2>
+          <p class="section-sub">We're local buyers, not agents. That means no listings, no open houses, and no commissions — just a fair cash offer and a closing date you choose.</p>
+        </header>
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+            </div>
+            <h3>Fair, transparent offers</h3>
+            <p>We use local Tampa Bay comps, property condition, and market trends to present an honest cash number — never a lowball bait-and-switch.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Close on your timeline</h3>
+            <p>Need to close in a week? We can do that. Need 60 days to find your next place? Also fine. You pick the date.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l3-3 4 4 8-8 3 3"/><path d="M3 18h18"/></svg>
+            </div>
+            <h3>Sold as-is, no repairs</h3>
+            <p>Leaky roof? Tenant damage? Storm wear? Don't lift a hammer. We buy homes exactly as they are — even the ones other buyers walk from.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4z"/><path d="M4 10h16"/><path d="M9 14h2"/></svg>
+            </div>
+            <h3>No fees, no surprises</h3>
+            <p>Zero commissions, zero closing-cost surprises. The number we offer is the number you walk away with.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="situations" id="situations">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Situations We Help With</p>
+          <h2>Life happens — we make selling the easy part</h2>
+          <p class="section-sub">Our team has helped homeowners across Hillsborough, Pinellas, Pasco, and Manatee counties through every kind of situation.</p>
+        </header>
+        <div class="grid-3">
+          <div class="tile"><h4>Foreclosure</h4><p>Stop the process and protect your credit with a fast, private sale.</p></div>
+          <div class="tile"><h4>Inherited property</h4><p>Simplify probate-ready homes without repairs or cleanouts.</p></div>
+          <div class="tile"><h4>Divorce</h4><p>A quiet, quick closing that lets both parties move on.</p></div>
+          <div class="tile"><h4>Relocation</h4><p>Moving out of state? Close on your schedule, not the market's.</p></div>
+          <div class="tile"><h4>Problem tenants</h4><p>We buy tenant-occupied properties — no eviction needed.</p></div>
+          <div class="tile"><h4>Storm or flood damage</h4><p>Hurricane-hit or water damaged? We handle the repairs ourselves.</p></div>
+          <div class="tile"><h4>Behind on payments</h4><p>Work with a local partner who understands Florida law and timelines.</p></div>
+          <div class="tile"><h4>Tired landlord</h4><p>Retire from the rental game with a clean, one-offer exit.</p></div>
+          <div class="tile"><h4>Downsizing</h4><p>Skip showings and staging when you're ready for the next chapter.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="how-it-works">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">How It Works</p>
+          <h2>Three simple steps to a cash close</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <div class="step-num">01</div>
+            <h3>Tell us about your home</h3>
+            <p>Fill out the short form above or give us a call. Share the basics — address, condition, timeline. It takes about two minutes.</p>
+          </li>
+          <li>
+            <div class="step-num">02</div>
+            <h3>Get a fair cash offer</h3>
+            <p>We review local comps and property details and present you with a written, no-obligation cash offer — usually within 24 hours.</p>
+          </li>
+          <li>
+            <div class="step-num">03</div>
+            <h3>Close and get paid</h3>
+            <p>Pick a closing date that works for you — as little as 7 days out. Walk away with your cash at a local Tampa title company.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About TBHP</p>
+          <h2>Local investors building stronger Tampa Bay neighborhoods</h2>
+          <p>Tampa Bay Housing Partners is a family-run property group based right here on the Bay. Our mission is simple: help homeowners move on with dignity, then breathe new life into the homes we buy so another family can make lasting memories there.</p>
+          <p>Every home we purchase is renovated and reintroduced as quality, affordable housing for Tampa Bay families — from Seminole Heights to Gulfport, Riverview to Dunedin. When you sell to us, you're not just getting a fair offer; you're helping keep neighborhoods strong.</p>
+          <ul class="about-stats">
+            <li><strong>450+</strong><span>Homes purchased</span></li>
+            <li><strong>10 yrs</strong><span>Serving Tampa Bay</span></li>
+            <li><strong>7 days</strong><span>Fastest close</span></li>
+            <li><strong>$0</strong><span>Fees or commissions</span></li>
+          </ul>
+          <a href="#offer" class="btn btn-primary">See What Your Home Is Worth</a>
+        </div>
+        <div class="about-media" aria-hidden="true">
+          <div class="media-card media-one"></div>
+          <div class="media-card media-two"></div>
+          <div class="media-card media-three"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">What Sellers Say</p>
+          <h2>Real reviews from Tampa Bay homeowners</h2>
+        </header>
+        <div class="grid-3 quotes">
+          <figure class="quote">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <blockquote>"We inherited my mom's house in Seminole Heights and had no idea where to start. TBHP walked us through every step, gave a fair offer, and closed in 12 days. Lifesavers."</blockquote>
+            <figcaption>— Marisa P., Tampa</figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <blockquote>"After the last hurricane we were ready to be done with the house. No repairs, no agents — they bought it as-is and we closed before the next rent was due."</blockquote>
+            <figcaption>— David & Joan K., St. Petersburg</figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <blockquote>"I'm a retired landlord and was tired of tenant headaches. TBHP bought the duplex tenants-and-all. Honest team, fair price, zero drama."</blockquote>
+            <figcaption>— Renaldo G., Clearwater</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Where We Buy</p>
+          <h2>Serving the entire Tampa Bay area</h2>
+        </header>
+        <ul class="area-list">
+          <li>Tampa</li><li>St. Petersburg</li><li>Clearwater</li><li>Brandon</li>
+          <li>Riverview</li><li>Largo</li><li>Wesley Chapel</li><li>New Port Richey</li>
+          <li>Seminole</li><li>Dunedin</li><li>Palm Harbor</li><li>Plant City</li>
+          <li>Apollo Beach</li><li>Ruskin</li><li>Temple Terrace</li><li>Bradenton</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Frequently Asked</p>
+          <h2>Questions Tampa Bay sellers ask us</h2>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary>How do you come up with your offer?</summary>
+            <p>We look at recent comparable sales in your neighborhood, the current condition of your home, and what it will take to renovate it for the next family. We'll walk you through the numbers so nothing is a black box.</p>
+          </details>
+          <details>
+            <summary>Are there any fees or commissions?</summary>
+            <p>No. We don't charge commissions, listing fees, or closing-cost markups. The cash offer you accept is what you receive at closing.</p>
+          </details>
+          <details>
+            <summary>How fast can you close?</summary>
+            <p>As quickly as 7 days with a reputable Tampa-area title company. If you need more time, that's fine too — pick any date that works for you.</p>
+          </details>
+          <details>
+            <summary>Do I need to make repairs or clean out the house?</summary>
+            <p>Never. Leave what you want, take what you want — we handle the rest.</p>
+          </details>
+          <details>
+            <summary>Do you buy tenant-occupied properties?</summary>
+            <p>Yes. We regularly buy rentals with active leases or difficult tenants. You don't need to handle an eviction before selling.</p>
+          </details>
+          <details>
+            <summary>Is there any obligation to accept your offer?</summary>
+            <p>Zero. Our offers are free and no-obligation. If the number isn't right for you, there's no pressure — and no follow-up spam.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="container cta-grid">
+        <div>
+          <h2>Ready for a fair cash offer on your Tampa Bay home?</h2>
+          <p>Call us, text us, or request an offer online. A real person on our Tampa team will get back to you within one business day.</p>
+          <div class="cta-contacts">
+            <a href="tel:+18135550199" class="cta-contact">
+              <span>Call or text</span>
+              <strong>(813) 555-0199</strong>
+            </a>
+            <a href="mailto:offers@tampabayhousingpartners.com" class="cta-contact">
+              <span>Email</span>
+              <strong>offers@tampabayhousingpartners.com</strong>
+            </a>
+            <div class="cta-contact">
+              <span>Office</span>
+              <strong>400 N Ashley Dr, Tampa, FL 33602</strong>
+            </div>
+          </div>
+        </div>
+        <form class="cta-form" id="contactForm" novalidate>
+          <h3>Request your offer</h3>
+          <label><span>Name</span><input type="text" name="name" required /></label>
+          <label><span>Phone</span><input type="tel" name="phone" required /></label>
+          <label><span>Property address</span><input type="text" name="address" required /></label>
+          <label><span>Anything we should know?</span><textarea name="notes" rows="3"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+          <p class="form-success" id="contactSuccess" hidden>Thanks! We'll be in touch shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="32" height="32"><rect width="48" height="48" rx="10" fill="#1aa0c9"/><path d="M9 26 L24 13 L39 26 V38 H29 V29 H19 V38 H9 Z" fill="#fff"/><circle cx="36" cy="14" r="3" fill="#f5a623"/></svg>
+          </span>
+          <span class="brand-text"><strong>Tampa Bay</strong><span>Housing Partners</span></span>
+        </div>
+        <p class="muted small">Local cash home buyers helping Tampa Bay families move on — and building stronger neighborhoods along the way.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul><li><a href="#about">About</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#situations">Situations</a></li><li><a href="#testimonials">Reviews</a></li></ul>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="#offer">Cash Offer</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+18135550199">(813) 555-0199</a></li>
+          <li><a href="mailto:offers@tampabayhousingpartners.com">offers@tampabayhousingpartners.com</a></li>
+          <li>400 N Ashley Dr, Tampa, FL 33602</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Tampa Bay Housing Partners, LLC. All rights reserved.</p>
+      <p class="muted small">TBHP is a private real estate investment company and is not acting as a real estate agent or broker.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
